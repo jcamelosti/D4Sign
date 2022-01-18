@@ -260,8 +260,8 @@ class Doc4Sign
 //Utilização da Classe
 $client = new Doc4Sign();
 $client->setUrl('https://sandbox.d4sign.com.br/api/'); //Desenvolvimento (SandBox)
-$client->setAccessToken("live_64e03bcb93ca2a0f3ca0b45bdb3f7f4bd1bc9cf10c71844d951d828ec9aff7b8");
-$client->setCryptKey("live_crypt_yAaa0GTKyFhZhjOOzufg563BkDO8ug1A");
+$client->setAccessToken("");
+$client->setCryptKey("");
 
 
 //################Fazendo Upload de Arquivo
