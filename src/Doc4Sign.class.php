@@ -254,14 +254,22 @@ class Doc4Sign
     
     	return $this->request("/documents/$documentKey/sendtosigner", "POST", $data, 200);
     }
+
+    /*
+    Listando Cofres
+    */
+    public function getSafeList($safeKey = '')
+    {    
+        return $this->client->request("/safes/$safeKey", "GET", [], 200);
+    }
 }
 
 
 //Utilização da Classe
 $client = new Doc4Sign();
 $client->setUrl('https://sandbox.d4sign.com.br/api/'); //Desenvolvimento (SandBox)
-$client->setAccessToken("");
-$client->setCryptKey("");
+$client->setAccessToken("live_64e03bcb93ca2a0f3ca0b45bdb3f7f4bd1bc9cf10c71844d951d828ec9aff7b8");
+$client->setCryptKey("live_crypt_yAaa0GTKyFhZhjOOzufg563BkDO8ug1A");
 
 
 //################Fazendo Upload de Arquivo
